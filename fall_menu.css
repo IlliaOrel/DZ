@@ -1,0 +1,53 @@
+.menu ul{
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.menu li{
+    display: table-cell;
+    background-color:grey;
+    text-align: center;
+    position: relative;
+}
+
+.menu ul ul{
+    display: block;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s .2s linear;
+    
+}
+
+.menu ul ul li{
+    display: block;
+}
+
+.menu ul ul a{
+    background-color: rgb(212, 75, 21);
+}
+
+.menu ul ul a:hover{
+    background-color: rgb(233, 196, 128);
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+    
+}
+
+.menu a:hover{
+background-color: rgb(197, 192, 189);
+}
+
+.menu li:hover ul{
+    display: block;
+    height: 200px;;
+}
